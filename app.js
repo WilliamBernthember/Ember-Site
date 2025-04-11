@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to load and display pages
     async function loadPage(page, isInitialLoad = false) {
         try {
-            const response = await fetch(`/Ember-Site/partials/home.html`);
+            const response = await fetch(`partials/home.html`);
             if (!response.ok) throw new Error('Page not found');
 
             contentDiv.innerHTML = await response.text();
